@@ -10,7 +10,9 @@ import WebKit
 
 public class Bucksapp : UIViewController {
     
-    let webView =  WKWebView()
+    let webView:WKWebView =  WKWebView()
+    let apiKey:String = "";
+    let uuid:String = "";
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,20 @@ public class Bucksapp : UIViewController {
         
         guard let url = URL(string: "https://app.dev.bucksapp.com") else {
             return
+        }
+        let cookie = HTTPCookie(properties: [
+            .domain: "app.dev.bucksapp.com",
+            .path: "/",
+            .name: "NEXT_LOCALE",
+            .value: "es",
+            .secure: "TRUE",
+            .expires: NSDate(timeIntervalSinceNow: 31556926)
+        ])!
+        
+        if #available(iOS 11.0, *) {
+            webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
+        } else {
+            // Fallback on earlier versions
         }
         
         let request:URLRequest = URLRequest(url: url)
