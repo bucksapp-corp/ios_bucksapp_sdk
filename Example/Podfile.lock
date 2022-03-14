@@ -1,0 +1,16 @@
+PODS:
+  - ios_bucksapp_sdk (0.1.0)
+
+DEPENDENCIES:
+  - ios_bucksapp_sdk (from `../`)
+
+EXTERNAL SOURCES:
+  ios_bucksapp_sdk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ios_bucksapp_sdk: dbda37845296306b64f9dba8a53eaca37d34c61f
+
+PODFILE CHECKSUM: 5dad089657df59c92f217b14125326db45b359a4
+
+COCOAPODS: 1.10.2

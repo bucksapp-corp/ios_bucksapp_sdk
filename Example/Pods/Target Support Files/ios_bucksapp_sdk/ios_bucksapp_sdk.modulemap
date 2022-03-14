@@ -1,0 +1,6 @@
+framework module ios_bucksapp_sdk {
+  umbrella header "ios_bucksapp_sdk-umbrella.h"
+
+  export *
+  module * { export * }
+}
