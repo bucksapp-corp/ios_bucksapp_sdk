@@ -7,18 +7,24 @@
 //
 
 import UIKit
+import ios_bucksapp_sdk
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var showBucksapp: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func showBucksappTapped(_ sender: Any) {
+        let vc = Bucksapp()
+        vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+        self.present(vc, animated: true, completion: nil)
     }
-
 }
 

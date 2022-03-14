@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ios_bucksapp_sdk: dbda37845296306b64f9dba8a53eaca37d34c61f
+  ios_bucksapp_sdk: 5f6ec6ede0bcd678adf351bf20e83a179358e62a
 
 PODFILE CHECKSUM: 5dad089657df59c92f217b14125326db45b359a4
 
