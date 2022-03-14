@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ios_bucksapp_sdk_Example' do
+  pod 'ios_bucksapp_sdk', :path => '../'
+
+  target 'ios_bucksapp_sdk_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
