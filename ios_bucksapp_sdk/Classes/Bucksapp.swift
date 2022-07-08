@@ -17,24 +17,27 @@ public class Bucksapp : UIViewController {
     public var apiKey:String = "";
     public var uuid:String = "";
     public var environment:String = "development";
+    var host:String = "app.dev.bucksapp.com";
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(webView)
-        
-        var url=URL(string: "https://api.dev.bucksapp.com/api/fi/v1/authenticate");
-        
+
         switch environment {
         case "staging":
-            url=URL(string: "https://api.dev.bucksapp.com/api/fi/v1/authenticate");
+            self.host="app.stg.bucksapp.com";
+            break;
+        case "sandbox":
+            self.host="app.sbx.bucksapp.com";
             break;
         case "production":
-            url=URL(string: "https://api.dev.bucksapp.com/api/fi/v1/authenticate");
+            self.host="app.bucksapp.com";
             break;
         default:
-            url=URL(string: "https://api.dev.bucksapp.com/api/fi/v1/authenticate");
+            self.host="app.dev.bucksapp.com";
         }
         
+        var url=URL(string: "https://\(self.host)/api/authenticate");
         
         let parameters = "{\n    \"user\": \"\(uuid)\"\n}"
         let postData = parameters.data(using: .utf8)
@@ -70,13 +73,13 @@ public class Bucksapp : UIViewController {
                 return
             }
             
-            guard let url = URL(string: "https://app.dev.bucksapp.com") else {
+            guard let url = URL(string: "https://\(self.host)") else {
                 return
             }
             
             if #available(iOS 11.0, *) {
                 self.webView.configuration.websiteDataStore.httpCookieStore.setCookie(HTTPCookie(properties: [
-                    .domain: "app.dev.bucksapp.com",
+                    .domain: self.host,
                     .path: "/",
                     .name: "token",
                     .value: token,
@@ -84,7 +87,7 @@ public class Bucksapp : UIViewController {
                     .expires: NSDate(timeIntervalSinceNow: 31556926)
                 ])!);
                 self.webView.configuration.websiteDataStore.httpCookieStore.setCookie(HTTPCookie(properties: [
-                    .domain: "app.dev.bucksapp.com",
+                    .domain: self.host,
                     .path: "/",
                     .name: "NEXT_LOCALE",
                     .value: "es",

@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let vc = Bucksapp();
-        vc.apiKey = "12TvAswlCh03Qhj5uxiM7w";
-        vc.uuid = "1c111bf4-7646-4b84-bc4c-4426fb596a87";
-        vc.environment = "development";
+        vc.apiKey = "API_KEY";
+        vc.uuid = "UUID";
+        vc.environment = "sandbox";
         
         vista.addSubview(vc.view);
         

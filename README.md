@@ -25,9 +25,9 @@ pod 'ios_bucksapp_sdk'
 For implement in your app simply instantiate the Bucksapp View Controller
 ```
         let vc = Bucksapp();
-        vc.apiKey = "12TvAswlCh03Qhj5uxiM7w";
-        vc.uuid = "1c111bf4-7646-4b84-bc4c-4426fb596a87";
-        vc.environment = "development";
+        vc.apiKey = "API_KEY";
+        vc.uuid = "UUID";
+        vc.environment = "sandbox";
         vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
         self.present(vc, animated: true, completion: nil)
 ```
