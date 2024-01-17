@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C6D91934EA32DF4F3336D84053935ED /* Bucksapp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A063F4457CFEF2C15272EDACBA75BA3D /* Bucksapp.swift */; };
-		4B99F398F25033A291B2918C2A2FCD79 /* Pods-ios_bucksapp_sdk_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DED367BC96C0BDB55FC35F9DAD66427 /* Pods-ios_bucksapp_sdk_Tests-dummy.m */; };
-		52C880CBA565C4F1329B9B23C68B2786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5EC9823D3B76EC70EB6491C4C4BA1DB6 /* Pods-ios_bucksapp_sdk_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F20F977BFB9D63A7CCBA251E8A8CCD20 /* Pods-ios_bucksapp_sdk_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B5C9B91233D3EDFB310B4D6DECD7BF3 /* Pods-ios_bucksapp_sdk_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BACABF45E088E56760C515755106304E /* Pods-ios_bucksapp_sdk_Example-dummy.m */; };
-		86DD9D5EA52995E79D00E0649F208CB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		87FCF56D07FE1A4B9E381A658426A9C9 /* ios_bucksapp_sdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D32C94F0C787F24B4D06C1B236B0E1 /* ios_bucksapp_sdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A311848464D3F18D8E2F22C7051280F8 /* ios_bucksapp_sdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44968E8B9A973701B81233C3F12F4FF6 /* ios_bucksapp_sdk-dummy.m */; };
-		B62F636C5AB640FE00B88EAE577BAFAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		DE193A421C6DB769459D00DEAB72DFE6 /* Pods-ios_bucksapp_sdk_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC01ACE3BE506766F52C08FCB55793C /* Pods-ios_bucksapp_sdk_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03B829980EF6262ECFF5A4B5B6B4E13F /* Bucksapp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A063F4457CFEF2C15272EDACBA75BA3D /* Bucksapp.swift */; };
+		1637083132F3A6867ACCBD433650577F /* Pods-ios_bucksapp_sdk_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC01ACE3BE506766F52C08FCB55793C /* Pods-ios_bucksapp_sdk_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2259D69D75228CFD88FC9B5ACD132CB3 /* ios_bucksapp_sdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44968E8B9A973701B81233C3F12F4FF6 /* ios_bucksapp_sdk-dummy.m */; };
+		47BE2B8E570EFEE0B5BE8991E81D4151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5853AE59B04F864FA87ED015E2445816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		73E4F31C289734E9B6AA91D6C0BBCEBE /* Pods-ios_bucksapp_sdk_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DED367BC96C0BDB55FC35F9DAD66427 /* Pods-ios_bucksapp_sdk_Tests-dummy.m */; };
+		8039D67495EB5F61C1AC185234A4D5AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		867A2BF6BCF846FEA15E64ACF22F8175 /* Pods-ios_bucksapp_sdk_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BACABF45E088E56760C515755106304E /* Pods-ios_bucksapp_sdk_Example-dummy.m */; };
+		9D2D04A7D36E4208818ED85E37592F83 /* Pods-ios_bucksapp_sdk_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F20F977BFB9D63A7CCBA251E8A8CCD20 /* Pods-ios_bucksapp_sdk_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DACED1AEF2376404D747B7CC920FB636 /* ios_bucksapp_sdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D32C94F0C787F24B4D06C1B236B0E1 /* ios_bucksapp_sdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		110F7F1D992036357D2CA9C0D37CC7F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6907C762791933690A1F7829D8A5924C;
-			remoteInfo = ios_bucksapp_sdk;
-		};
-		3350B8DA16E5A5738AE9E162B005DA2D /* PBXContainerItemProxy */ = {
+		02CBE287E328D9FE27FEF8543BCFE321 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4096FD48598B88C3816FA8669C29EC5F;
 			remoteInfo = "Pods-ios_bucksapp_sdk_Example";
+		};
+		3BE74564343787F0C099F41FC02A6148 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6907C762791933690A1F7829D8A5924C;
+			remoteInfo = ios_bucksapp_sdk;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,10 +41,10 @@
 		0FEB942F419153E82DE250BD8D5088F1 /* Pods-ios_bucksapp_sdk_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ios_bucksapp_sdk_Example-Info.plist"; sourceTree = "<group>"; };
 		1DED367BC96C0BDB55FC35F9DAD66427 /* Pods-ios_bucksapp_sdk_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ios_bucksapp_sdk_Tests-dummy.m"; sourceTree = "<group>"; };
 		20727DD09A9EBA66DD24DB29C3DCE913 /* ios_bucksapp_sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ios_bucksapp_sdk.debug.xcconfig; sourceTree = "<group>"; };
-		22CB0134F7F81038F218A949BDA895D9 /* Pods_ios_bucksapp_sdk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ios_bucksapp_sdk_Example.framework; path = "Pods-ios_bucksapp_sdk_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CB0134F7F81038F218A949BDA895D9 /* Pods-ios_bucksapp_sdk_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ios_bucksapp_sdk_Example"; path = Pods_ios_bucksapp_sdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		254735D91BFC55EBB684E7072C60B0A9 /* Pods-ios_bucksapp_sdk_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ios_bucksapp_sdk_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		299C2A9148F865B4D41D3C251718937A /* Pods-ios_bucksapp_sdk_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ios_bucksapp_sdk_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2C279A814F780F638198E3DD98235F4B /* Pods_ios_bucksapp_sdk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ios_bucksapp_sdk_Tests.framework; path = "Pods-ios_bucksapp_sdk_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C279A814F780F638198E3DD98235F4B /* Pods-ios_bucksapp_sdk_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ios_bucksapp_sdk_Tests"; path = Pods_ios_bucksapp_sdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD0D3C137B980CB3404159AE67D0CE7 /* Pods-ios_bucksapp_sdk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios_bucksapp_sdk_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		44968E8B9A973701B81233C3F12F4FF6 /* ios_bucksapp_sdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ios_bucksapp_sdk-dummy.m"; sourceTree = "<group>"; };
 		4C72DF2A578978FF462325003332CF4F /* ios_bucksapp_sdk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ios_bucksapp_sdk-prefix.pch"; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		C294BAE165153A357B24C4687652DCE5 /* Pods-ios_bucksapp_sdk_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ios_bucksapp_sdk_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C6B1A0D42E56CE5E3BEFFED174DB30E5 /* Pods-ios_bucksapp_sdk_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ios_bucksapp_sdk_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D54A61C90A348C88DE1196CD955CE968 /* ios_bucksapp_sdk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ios_bucksapp_sdk.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D6C5E69FB79B50CE22625C14C3025553 /* ios_bucksapp_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ios_bucksapp_sdk.framework; path = ios_bucksapp_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C5E69FB79B50CE22625C14C3025553 /* ios_bucksapp_sdk */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ios_bucksapp_sdk; path = ios_bucksapp_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C02F4A3C90659D22D323B87A206A9C /* ios_bucksapp_sdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ios_bucksapp_sdk.modulemap; sourceTree = "<group>"; };
 		D98392A778426350D156AFF07BE19C39 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		E176576751BEA9660C7ECD5B65D2BBF2 /* ios_bucksapp_sdk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ios_bucksapp_sdk-Info.plist"; sourceTree = "<group>"; };
@@ -73,27 +73,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0AA086D50650D8C2355FE3672AC0C1EE /* Frameworks */ = {
+		10DA8F6DB8F822EA336F8168AACC0DD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62F636C5AB640FE00B88EAE577BAFAE /* Foundation.framework in Frameworks */,
+				8039D67495EB5F61C1AC185234A4D5AD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9992869C90382767DDBD89FE394DA2C1 /* Frameworks */ = {
+		3C18834B177EF6B9DE1021AB21372FFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C880CBA565C4F1329B9B23C68B2786 /* Foundation.framework in Frameworks */,
+				47BE2B8E570EFEE0B5BE8991E81D4151 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A04B32018D72F1913EFF348A8015DDB /* Frameworks */ = {
+		5FE80C118A00844831657154A55CDA17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86DD9D5EA52995E79D00E0649F208CB1 /* Foundation.framework in Frameworks */,
+				5853AE59B04F864FA87ED015E2445816 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +114,16 @@
 			);
 			name = "Pods-ios_bucksapp_sdk_Tests";
 			path = "Target Support Files/Pods-ios_bucksapp_sdk_Tests";
+			sourceTree = "<group>";
+		};
+		1368D81E459CE901565C9FCA9705ECE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6C5E69FB79B50CE22625C14C3025553 /* ios_bucksapp_sdk */,
+				22CB0134F7F81038F218A949BDA895D9 /* Pods-ios_bucksapp_sdk_Example */,
+				2C279A814F780F638198E3DD98235F4B /* Pods-ios_bucksapp_sdk_Tests */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		3BD0DB2085E9DD8836E0FBC518562D73 /* Pod */ = {
@@ -200,19 +210,9 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				7A9B4C0275C429DB8B6582A425CFB54F /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				D0560A8BB0B0B4EA74E820C34DD2DEC2 /* Products */,
+				1368D81E459CE901565C9FCA9705ECE9 /* Products */,
 				67F35E46431A2B46A85B56672DBD1DB7 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D0560A8BB0B0B4EA74E820C34DD2DEC2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D6C5E69FB79B50CE22625C14C3025553 /* ios_bucksapp_sdk.framework */,
-				22CB0134F7F81038F218A949BDA895D9 /* Pods_ios_bucksapp_sdk_Example.framework */,
-				2C279A814F780F638198E3DD98235F4B /* Pods_ios_bucksapp_sdk_Tests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -226,27 +226,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1B635AD34AEF6A343F45937C998A56D1 /* Headers */ = {
+		166DFBAD2A6AC3ABB11BB0EEBD4EFBE4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE193A421C6DB769459D00DEAB72DFE6 /* Pods-ios_bucksapp_sdk_Tests-umbrella.h in Headers */,
+				9D2D04A7D36E4208818ED85E37592F83 /* Pods-ios_bucksapp_sdk_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		336B8AF775D2E43E6A4AAAA4CEDDF39A /* Headers */ = {
+		850AD1BD80819DA50A06A79F37649E78 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87FCF56D07FE1A4B9E381A658426A9C9 /* ios_bucksapp_sdk-umbrella.h in Headers */,
+				1637083132F3A6867ACCBD433650577F /* Pods-ios_bucksapp_sdk_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FF0D464F68D06F35C74C73716B9FA66 /* Headers */ = {
+		EE6720F38E1ABC9E7993B3099FA336FA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC9823D3B76EC70EB6491C4C4BA1DB6 /* Pods-ios_bucksapp_sdk_Example-umbrella.h in Headers */,
+				DACED1AEF2376404D747B7CC920FB636 /* ios_bucksapp_sdk-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,50 +255,50 @@
 /* Begin PBXNativeTarget section */
 		4096FD48598B88C3816FA8669C29EC5F /* Pods-ios_bucksapp_sdk_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A07D34DCCBB19C468B4E623BC33285B8 /* Build configuration list for PBXNativeTarget "Pods-ios_bucksapp_sdk_Example" */;
+			buildConfigurationList = BDA3E4D69879F1A5D8AF3AF509B5AE77 /* Build configuration list for PBXNativeTarget "Pods-ios_bucksapp_sdk_Example" */;
 			buildPhases = (
-				5FF0D464F68D06F35C74C73716B9FA66 /* Headers */,
-				B348A0483F9A14E36EA5B4C9A4E26B9F /* Sources */,
-				9992869C90382767DDBD89FE394DA2C1 /* Frameworks */,
-				3E203E2B1339D27F80576E7A53739ABC /* Resources */,
+				166DFBAD2A6AC3ABB11BB0EEBD4EFBE4 /* Headers */,
+				B52DB8B6DABA00568E1B70F4DEB9CA78 /* Sources */,
+				10DA8F6DB8F822EA336F8168AACC0DD9 /* Frameworks */,
+				ECDF1415910BF2D5CBC199333E0CDA0D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0B624A95282FB9655AE39A659C55D790 /* PBXTargetDependency */,
+				2C2CBE471A62A7BDE3B8EA89042F83FD /* PBXTargetDependency */,
 			);
 			name = "Pods-ios_bucksapp_sdk_Example";
-			productName = "Pods-ios_bucksapp_sdk_Example";
-			productReference = 22CB0134F7F81038F218A949BDA895D9 /* Pods_ios_bucksapp_sdk_Example.framework */;
+			productName = Pods_ios_bucksapp_sdk_Example;
+			productReference = 22CB0134F7F81038F218A949BDA895D9 /* Pods-ios_bucksapp_sdk_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		66BFB3E4502C8818F86F526995EC8773 /* Pods-ios_bucksapp_sdk_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AA75B452C1CE99BA9A34C9EB16FA85E /* Build configuration list for PBXNativeTarget "Pods-ios_bucksapp_sdk_Tests" */;
+			buildConfigurationList = 33746EC6CD6C2C3936A7A853872B6DD9 /* Build configuration list for PBXNativeTarget "Pods-ios_bucksapp_sdk_Tests" */;
 			buildPhases = (
-				1B635AD34AEF6A343F45937C998A56D1 /* Headers */,
-				9AF48B1DF9EDB067DCFC8DFCD55BBFFA /* Sources */,
-				9A04B32018D72F1913EFF348A8015DDB /* Frameworks */,
-				ACA538AC0139C4F0FADBFB569B83B583 /* Resources */,
+				850AD1BD80819DA50A06A79F37649E78 /* Headers */,
+				26831C7D2083CE4808E0BE0A3CA56626 /* Sources */,
+				5FE80C118A00844831657154A55CDA17 /* Frameworks */,
+				8E5D752F46570965E96476C47177DD37 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C9AC2F5F92DAB95A7746D5A30D737F44 /* PBXTargetDependency */,
+				81FD4149AA533440111AFB1E237C5F3C /* PBXTargetDependency */,
 			);
 			name = "Pods-ios_bucksapp_sdk_Tests";
-			productName = "Pods-ios_bucksapp_sdk_Tests";
-			productReference = 2C279A814F780F638198E3DD98235F4B /* Pods_ios_bucksapp_sdk_Tests.framework */;
+			productName = Pods_ios_bucksapp_sdk_Tests;
+			productReference = 2C279A814F780F638198E3DD98235F4B /* Pods-ios_bucksapp_sdk_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		6907C762791933690A1F7829D8A5924C /* ios_bucksapp_sdk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAF2269A9631219739B1DC2060F764E5 /* Build configuration list for PBXNativeTarget "ios_bucksapp_sdk" */;
+			buildConfigurationList = 632392406823AA71DA9A6E5A33FD23C4 /* Build configuration list for PBXNativeTarget "ios_bucksapp_sdk" */;
 			buildPhases = (
-				336B8AF775D2E43E6A4AAAA4CEDDF39A /* Headers */,
-				33611D7F8046B389E5BFB4ACB6AC9A00 /* Sources */,
-				0AA086D50650D8C2355FE3672AC0C1EE /* Frameworks */,
-				F31E5C1C9AFEA47587AEA57289AB42B7 /* Resources */,
+				EE6720F38E1ABC9E7993B3099FA336FA /* Headers */,
+				471F7AFEFD151728ECC518B86C3F5D09 /* Sources */,
+				3C18834B177EF6B9DE1021AB21372FFD /* Frameworks */,
+				29395FF38936BE36C78C95EBF60E0D96 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -306,7 +306,7 @@
 			);
 			name = ios_bucksapp_sdk;
 			productName = ios_bucksapp_sdk;
-			productReference = D6C5E69FB79B50CE22625C14C3025553 /* ios_bucksapp_sdk.framework */;
+			productReference = D6C5E69FB79B50CE22625C14C3025553 /* ios_bucksapp_sdk */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -315,19 +315,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D0560A8BB0B0B4EA74E820C34DD2DEC2 /* Products */;
+			productRefGroup = 1368D81E459CE901565C9FCA9705ECE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -339,21 +339,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3E203E2B1339D27F80576E7A53739ABC /* Resources */ = {
+		29395FF38936BE36C78C95EBF60E0D96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACA538AC0139C4F0FADBFB569B83B583 /* Resources */ = {
+		8E5D752F46570965E96476C47177DD37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F31E5C1C9AFEA47587AEA57289AB42B7 /* Resources */ = {
+		ECDF1415910BF2D5CBC199333E0CDA0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,45 +363,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		33611D7F8046B389E5BFB4ACB6AC9A00 /* Sources */ = {
+		26831C7D2083CE4808E0BE0A3CA56626 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C6D91934EA32DF4F3336D84053935ED /* Bucksapp.swift in Sources */,
-				A311848464D3F18D8E2F22C7051280F8 /* ios_bucksapp_sdk-dummy.m in Sources */,
+				73E4F31C289734E9B6AA91D6C0BBCEBE /* Pods-ios_bucksapp_sdk_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AF48B1DF9EDB067DCFC8DFCD55BBFFA /* Sources */ = {
+		471F7AFEFD151728ECC518B86C3F5D09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B99F398F25033A291B2918C2A2FCD79 /* Pods-ios_bucksapp_sdk_Tests-dummy.m in Sources */,
+				03B829980EF6262ECFF5A4B5B6B4E13F /* Bucksapp.swift in Sources */,
+				2259D69D75228CFD88FC9B5ACD132CB3 /* ios_bucksapp_sdk-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B348A0483F9A14E36EA5B4C9A4E26B9F /* Sources */ = {
+		B52DB8B6DABA00568E1B70F4DEB9CA78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B5C9B91233D3EDFB310B4D6DECD7BF3 /* Pods-ios_bucksapp_sdk_Example-dummy.m in Sources */,
+				867A2BF6BCF846FEA15E64ACF22F8175 /* Pods-ios_bucksapp_sdk_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0B624A95282FB9655AE39A659C55D790 /* PBXTargetDependency */ = {
+		2C2CBE471A62A7BDE3B8EA89042F83FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ios_bucksapp_sdk;
 			target = 6907C762791933690A1F7829D8A5924C /* ios_bucksapp_sdk */;
-			targetProxy = 110F7F1D992036357D2CA9C0D37CC7F1 /* PBXContainerItemProxy */;
+			targetProxy = 3BE74564343787F0C099F41FC02A6148 /* PBXContainerItemProxy */;
 		};
-		C9AC2F5F92DAB95A7746D5A30D737F44 /* PBXTargetDependency */ = {
+		81FD4149AA533440111AFB1E237C5F3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ios_bucksapp_sdk_Example";
 			target = 4096FD48598B88C3816FA8669C29EC5F /* Pods-ios_bucksapp_sdk_Example */;
-			targetProxy = 3350B8DA16E5A5738AE9E162B005DA2D /* PBXContainerItemProxy */;
+			targetProxy = 02CBE287E328D9FE27FEF8543BCFE321 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -472,39 +472,7 @@
 			};
 			name = Debug;
 		};
-		4B0EB146AE8F2B6DE858B9449EBA92A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8050D1694D5F19C539EF66D4C4725755 /* Pods-ios_bucksapp_sdk_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ios_bucksapp_sdk_Tests/Pods-ios_bucksapp_sdk_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ios_bucksapp_sdk_Tests/Pods-ios_bucksapp_sdk_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		860F90C53B9AAB0AA057DAC105C61AB0 /* Release */ = {
+		2F5CDE07621EB78E1E5318558694B4D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BD0D3C137B980CB3404159AE67D0CE7 /* Pods-ios_bucksapp_sdk_Tests.release.xcconfig */;
 			buildSettings = {
@@ -537,7 +505,7 @@
 			};
 			name = Release;
 		};
-		92F065F6103369883747168B99F3DB05 /* Release */ = {
+		8003AAA22A62617B8B28805ADE55C6BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05E0FC6B788F6B623BDD1055E31FB5CE /* Pods-ios_bucksapp_sdk_Example.release.xcconfig */;
 			buildSettings = {
@@ -569,36 +537,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		B27B4D1E2DEECC212266BED3D82DD0C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20727DD09A9EBA66DD24DB29C3DCE913 /* ios_bucksapp_sdk.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ios_bucksapp_sdk/ios_bucksapp_sdk-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ios_bucksapp_sdk/ios_bucksapp_sdk-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ios_bucksapp_sdk/ios_bucksapp_sdk.modulemap";
-				PRODUCT_MODULE_NAME = ios_bucksapp_sdk;
-				PRODUCT_NAME = ios_bucksapp_sdk;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -662,7 +600,7 @@
 			};
 			name = Release;
 		};
-		D8B2B475259CFD7E5836E5B81F625340 /* Debug */ = {
+		CED9608E6C16311BC355CBDF1A6E6699 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3C83147B127D4B08070A18DFA7A775B /* Pods-ios_bucksapp_sdk_Example.debug.xcconfig */;
 			buildSettings = {
@@ -694,7 +632,39 @@
 			};
 			name = Debug;
 		};
-		EA6349EE463BA51C805855AF6F64F050 /* Release */ = {
+		D13082434A658F1D682239BF9491C8A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8050D1694D5F19C539EF66D4C4725755 /* Pods-ios_bucksapp_sdk_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ios_bucksapp_sdk_Tests/Pods-ios_bucksapp_sdk_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ios_bucksapp_sdk_Tests/Pods-ios_bucksapp_sdk_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE665BCC25965FE33FBCE9773DFB5068 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8961845C376FCC7ABE95E347ADB0E093 /* ios_bucksapp_sdk.release.xcconfig */;
 			buildSettings = {
@@ -725,9 +695,48 @@
 			};
 			name = Release;
 		};
+		FD75D74FFE6B2BF624E3D59C815A0F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20727DD09A9EBA66DD24DB29C3DCE913 /* ios_bucksapp_sdk.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ios_bucksapp_sdk/ios_bucksapp_sdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ios_bucksapp_sdk/ios_bucksapp_sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ios_bucksapp_sdk/ios_bucksapp_sdk.modulemap";
+				PRODUCT_MODULE_NAME = ios_bucksapp_sdk;
+				PRODUCT_NAME = ios_bucksapp_sdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33746EC6CD6C2C3936A7A853872B6DD9 /* Build configuration list for PBXNativeTarget "Pods-ios_bucksapp_sdk_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13082434A658F1D682239BF9491C8A8 /* Debug */,
+				2F5CDE07621EB78E1E5318558694B4D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -737,29 +746,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AA75B452C1CE99BA9A34C9EB16FA85E /* Build configuration list for PBXNativeTarget "Pods-ios_bucksapp_sdk_Tests" */ = {
+		632392406823AA71DA9A6E5A33FD23C4 /* Build configuration list for PBXNativeTarget "ios_bucksapp_sdk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B0EB146AE8F2B6DE858B9449EBA92A4 /* Debug */,
-				860F90C53B9AAB0AA057DAC105C61AB0 /* Release */,
+				FD75D74FFE6B2BF624E3D59C815A0F1E /* Debug */,
+				EE665BCC25965FE33FBCE9773DFB5068 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A07D34DCCBB19C468B4E623BC33285B8 /* Build configuration list for PBXNativeTarget "Pods-ios_bucksapp_sdk_Example" */ = {
+		BDA3E4D69879F1A5D8AF3AF509B5AE77 /* Build configuration list for PBXNativeTarget "Pods-ios_bucksapp_sdk_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8B2B475259CFD7E5836E5B81F625340 /* Debug */,
-				92F065F6103369883747168B99F3DB05 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BAF2269A9631219739B1DC2060F764E5 /* Build configuration list for PBXNativeTarget "ios_bucksapp_sdk" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B27B4D1E2DEECC212266BED3D82DD0C3 /* Debug */,
-				EA6349EE463BA51C805855AF6F64F050 /* Release */,
+				CED9608E6C16311BC355CBDF1A6E6699 /* Debug */,
+				8003AAA22A62617B8B28805ADE55C6BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

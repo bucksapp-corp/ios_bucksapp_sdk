@@ -37,7 +37,7 @@ public class Bucksapp : UIViewController {
             self.host="app.dev.bucksapp.com";
         }
         
-        var url=URL(string: "https://\(self.host)/api/authenticate");
+        let url=URL(string: "https://\(self.host)/api/authenticate");
         
         let parameters = "{\n    \"user\": \"\(uuid)\"\n}"
         let postData = parameters.data(using: .utf8)
