@@ -1,6 +1,6 @@
 {
   "name": "ios_bucksapp_sdk",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "An SDK for implement Bucksapp on your app.",
   "swift_versions": "5.0",
   "description": "TODO: Add long description of the pod here.",
@@ -10,14 +10,14 @@
     "file": "LICENSE"
   },
   "authors": {
-    "Raul": "raul@bucksapp.co"
+    "Raul": "rauleburro@gmail.com"
   },
   "source": {
     "git": "https://github.com/bucksapp-corp/ios_bucksapp_sdk.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "12.0"
   },
   "source_files": "ios_bucksapp_sdk/Classes/**/*",
   "swift_version": "5.0"

@@ -11,7 +11,7 @@ import FoundationNetworking
 #endif
 import WebKit
 
-public class Bucksapp : UIViewController {
+final public class Bucksapp : UIViewController {
     
     let webView:WKWebView =  WKWebView()
     public var apiKey:String = "";
@@ -69,8 +69,10 @@ public class Bucksapp : UIViewController {
             let json = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [String:AnyObject]
             print(json ?? "Empty Data")
             
-            guard let token = json!["token"] else {
-                return
+            var token = ""
+            
+            if (json != nil ) {
+                token = json!["token"] as? String ?? ""
             }
             
             guard let url = URL(string: "https://\(self.host)") else {
@@ -101,9 +103,6 @@ public class Bucksapp : UIViewController {
             let request:URLRequest = URLRequest(url: url)
             
             self.webView.load(request)
-            
-            
-            
         }
         task.resume()
         
