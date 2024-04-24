@@ -79,30 +79,37 @@ final public class Bucksapp : UIViewController {
                 return
             }
             
-            if #available(iOS 11.0, *) {
-                self.webView.configuration.websiteDataStore.httpCookieStore.setCookie(HTTPCookie(properties: [
-                    .domain: self.host,
-                    .path: "/",
-                    .name: "token",
-                    .value: token,
-                    .secure: "TRUE",
-                    .expires: NSDate(timeIntervalSinceNow: 31556926)
-                ])!);
-                self.webView.configuration.websiteDataStore.httpCookieStore.setCookie(HTTPCookie(properties: [
-                    .domain: self.host,
-                    .path: "/",
-                    .name: "NEXT_LOCALE",
-                    .value: "es",
-                    .secure: "TRUE",
-                    .expires: NSDate(timeIntervalSinceNow: 31556926)
-                ])!);
-            } else {
-                // Fallback on earlier versions
+            DispatchQueue.main.async {
+                if #available(iOS 11.0, *) {
+                    self.webView.configuration.websiteDataStore.httpCookieStore.setCookie(HTTPCookie(properties: [
+                        .domain: self.host,
+                        .path: "/",
+                        .name: "token",
+                        .value: token,
+                        .secure: "TRUE",
+                        .expires: NSDate(timeIntervalSinceNow: 31556926)
+                    ])!);
+                    self.webView.configuration.websiteDataStore.httpCookieStore.setCookie(HTTPCookie(properties: [
+                        .domain: self.host,
+                        .path: "/",
+                        .name: "NEXT_LOCALE",
+                        .value: "es",
+                        .secure: "TRUE",
+                        .expires: NSDate(timeIntervalSinceNow: 31556926)
+                    ])!);
+                } else {
+                    // Fallback on earlier versions
+                }
             }
             
             let request:URLRequest = URLRequest(url: url)
             
-            self.webView.load(request)
+            
+            DispatchQueue.main.async {
+                self.webView.load(request)
+            }
+            
+            
         }
         task.resume()
         

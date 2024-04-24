@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '12.0'
 
 target 'ios_bucksapp_sdk_Example' do
   pod 'ios_bucksapp_sdk', :path => '../'
