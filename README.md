@@ -34,7 +34,7 @@ For implement in your app simply instantiate the Bucksapp View Controller
 
 ## Author
 
-Raul, raul@bucksapp.co
+Raúl Burró, rauleburro@gmail.com
 
 ## License
 
