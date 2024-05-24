@@ -31,7 +31,7 @@ final public class Bucksapp : UIViewController {
             self.host="app.sbx.bucksapp.com";
             break;
         case "production":
-            self.host="app.bucksapp.com";
+            self.host="app.wally.bucksapp.com";
             break;
         default:
             self.host="app.dev.bucksapp.com";
