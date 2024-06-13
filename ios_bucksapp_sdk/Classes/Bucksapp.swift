@@ -17,102 +17,82 @@ final public class Bucksapp : UIViewController {
     public var apiKey:String = "";
     public var uuid:String = "";
     public var environment:String = "development";
-    var host:String = "app.dev.bucksapp.com";
+    var host:String {
+        switch environment {
+        case "staging": return "app.stg.bucksapp.com"
+        case "sandbox": return "app.sbx.bucksapp.com"
+        case "production": return "app.wally.bucksapp.com"
+        default: return "app.dev.bucksapp.com"
+        }
+    };
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(webView)
-
-        switch environment {
-        case "staging":
-            self.host="app.stg.bucksapp.com";
-            break;
-        case "sandbox":
-            self.host="app.sbx.bucksapp.com";
-            break;
-        case "production":
-            self.host="app.wally.bucksapp.com";
-            break;
-        default:
-            self.host="app.dev.bucksapp.com";
-        }
+        authenticateAndLoadWebView()
+    }
+    
+    private func authenticateAndLoadWebView() {
+        guard let url = URL(string: "https://\(host)/api/authenticate") else { return }
         
-        let url=URL(string: "https://\(self.host)/api/authenticate");
+        let parameters: [String: Any] = ["user": uuid]
+        guard let postData = try? JSONSerialization.data(withJSONObject: parameters, options: []) else {return}
         
-        let parameters = "{\n    \"user\": \"\(uuid)\"\n}"
-        let postData = parameters.data(using: .utf8)
+        //        let parameters = "{\n    \"user\": \"\(uuid)\"\n}"
+        //        let postData = parameters.data(using: .utf8)
         
-        var request = URLRequest(url: url!,timeoutInterval: Double.infinity);
-        
+        var request = URLRequest(url: url,timeoutInterval: Double.infinity);
         request.addValue(environment, forHTTPHeaderField: "jwt_aud")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("\(apiKey)", forHTTPHeaderField: "X-API-KEY")
-        
         request.httpMethod = "POST"
         request.httpBody = postData
         
         // Perform HTTP Request
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            
             // Check for Error
             if let error = error {
-                print("Error took place \(error)")
+                self.showError("Error occurred: \(error.localizedDescription)")
                 return
             }
             
             guard let data = data else {
-                print(String(describing: error))
+                self.showError("No data received: \(String(describing: error))")
                 return
             }
-            print(String(data: data, encoding: .utf8)!)
-            
-            let json = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [String:AnyObject]
-            print(json ?? "Empty Data")
-            
-            var token = ""
-            
-            if (json != nil ) {
-                token = json!["token"] as? String ?? ""
-            }
-            
-            guard let url = URL(string: "https://\(self.host)") else {
+            guard let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject],
+                  let token = json["token"] as? String else {
+                self.showError("Invalid JSON received or no token found.")
                 return
             }
-            
-            DispatchQueue.main.async {
-                if #available(iOS 11.0, *) {
-                    self.webView.configuration.websiteDataStore.httpCookieStore.setCookie(HTTPCookie(properties: [
-                        .domain: self.host,
-                        .path: "/",
-                        .name: "token",
-                        .value: token,
-                        .secure: "TRUE",
-                        .expires: NSDate(timeIntervalSinceNow: 31556926)
-                    ])!);
-                    self.webView.configuration.websiteDataStore.httpCookieStore.setCookie(HTTPCookie(properties: [
-                        .domain: self.host,
-                        .path: "/",
-                        .name: "NEXT_LOCALE",
-                        .value: "es",
-                        .secure: "TRUE",
-                        .expires: NSDate(timeIntervalSinceNow: 31556926)
-                    ])!);
-                } else {
-                    // Fallback on earlier versions
-                }
-            }
-            
-            let request:URLRequest = URLRequest(url: url)
-            
-            
-            DispatchQueue.main.async {
-                self.webView.load(request)
-            }
-            
+            self.loadWebView(with: token)
             
         }
         task.resume()
         
+        
+    }
+    
+    private func loadWebView(with token:String){
+        guard let url = URL(string: "https://\(host)/api/home") else { return }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let parameters: [String: Any] = ["token": token]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: [])
+        
+        DispatchQueue.main.async {
+            self.webView.load(request)
+        }
+    }
+    
+    private func showError(_ message: String) {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert, animated: true)
+        }
     }
     
     public override func viewDidLayoutSubviews() {
