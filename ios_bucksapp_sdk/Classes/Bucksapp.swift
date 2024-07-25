@@ -11,12 +11,12 @@ import FoundationNetworking
 #endif
 import WebKit
 
-final public class Bucksapp : UIViewController {
+final public class Bucksapp {
     
-    let webView:WKWebView =  WKWebView()
     public var apiKey:String = "";
     public var uuid:String = "";
     public var environment:String = "development";
+    let webView:WKWebView;
     var host:String {
         switch environment {
         case "staging": return "app.stg.bucksapp.com"
@@ -26,21 +26,19 @@ final public class Bucksapp : UIViewController {
         }
     };
     
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-        view.addSubview(webView)
-        authenticateAndLoadWebView()
+    public init(apiKey: String, uuid: String, environment: String, webView: WKWebView) {
+        self.apiKey = apiKey
+        self.uuid = uuid
+        self.environment = environment
+        self.webView = webView
     }
     
-    private func authenticateAndLoadWebView() {
+    public func generateRequest() {
         guard let url = URL(string: "https://\(host)/api/authenticate") else { return }
         
         let parameters: [String: Any] = ["user": uuid]
         guard let postData = try? JSONSerialization.data(withJSONObject: parameters, options: []) else {return}
-        
-        //        let parameters = "{\n    \"user\": \"\(uuid)\"\n}"
-        //        let postData = parameters.data(using: .utf8)
-        
+
         var request = URLRequest(url: url,timeoutInterval: Double.infinity);
         request.addValue(environment, forHTTPHeaderField: "jwt_aud")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -52,25 +50,24 @@ final public class Bucksapp : UIViewController {
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             // Check for Error
             if let error = error {
-                self.showError("Error occurred: \(error.localizedDescription)")
+                print("Error occurred: \(error.localizedDescription)")
                 return
             }
             
             guard let data = data else {
-                self.showError("No data received: \(String(describing: error))")
+                print("No data received: \(String(describing: error))")
                 return
             }
             guard let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject],
                   let token = json["token"] as? String else {
-                self.showError("Invalid JSON received or no token found.")
+                print("Invalid JSON received or no token found.")
                 return
             }
             self.loadWebView(with: token)
             
         }
         task.resume()
-        
-        
+
     }
     
     private func loadWebView(with token:String){
@@ -86,18 +83,4 @@ final public class Bucksapp : UIViewController {
             self.webView.load(request)
         }
     }
-    
-    private func showError(_ message: String) {
-        DispatchQueue.main.async {
-            let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default))
-            self.present(alert, animated: true)
-        }
-    }
-    
-    public override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        webView.frame = view.bounds
-    }
-    
 }
